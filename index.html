@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctorado en Biología Molecular · Universidad Tecnológica de Pereira</title>
+  <meta name="description" content="Grupo de estudiantes de doctorado de la asignatura Biología Molecular, Universidad Tecnológica de Pereira - UTP Manizales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#inicio" aria-label="Ir al inicio">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">Biología Molecular<small>Doctorado · UTP</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#inicio" class="active">Inicio</a>
+    <a href="#investigacion">Investigación</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#publicaciones">Publicaciones</a>
+    <a href="#contacto" class="nav-cta">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <canvas id="helix" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="hero-kicker">Universidad Tecnológica de Pereira · UTP Manizales</p>
+      <h1>Leemos la vida desde sus moléculas</h1>
+      <p class="hero-lead">Somos el grupo de estudiantes de doctorado de la asignatura Biología Molecular. Investigamos cómo los genes, las proteínas y las células explican la salud y el ambiente.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#investigacion">Ver líneas de investigación</a>
+        <a class="btn btn-ghost" href="#contacto">Escribirnos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIGACIÓN -->
+  <section class="section" id="investigacion">
+    <div class="wrap">
+      <h2>Investigación</h2>
+      <p class="section-intro">Cuatro líneas de trabajo donde combinamos laboratorio y análisis de datos. Toca una línea para ver su descripción.</p>
+
+      <div class="accordion" id="lines">
+        <article class="line">
+          <button class="line-head" aria-expanded="true"><span class="dot"></span>Genómica y expresión génica<i aria-hidden="true"></i></button>
+          <div class="line-body"><p>Estudiamos qué genes se activan en distintas condiciones usando PCR cuantitativa y secuenciación, para entender cómo responde un organismo a su entorno.</p></div>
+        </article>
+        <article class="line">
+          <button class="line-head" aria-expanded="false"><span class="dot"></span>Proteínas y estructura<i aria-hidden="true"></i></button>
+          <div class="line-body"><p>Analizamos la forma y función de proteínas de interés biomédico mediante expresión, purificación y modelado molecular.</p></div>
+        </article>
+        <article class="line">
+          <button class="line-head" aria-expanded="false"><span class="dot"></span>Biotecnología ambiental y agrícola<i aria-hidden="true"></i></button>
+          <div class="line-body"><p>Buscamos microorganismos y herramientas moleculares que ayuden a cuidar suelos, aguas y cultivos de la región cafetera.</p></div>
+        </article>
+        <article class="line">
+          <button class="line-head" aria-expanded="false"><span class="dot"></span>Bioinformática<i aria-hidden="true"></i></button>
+          <div class="line-body"><p>Desarrollamos flujos de análisis para interpretar datos de secuenciación y comparar genomas de manera reproducible.</p></div>
+        </article>
+      </div>
+
+      <ul class="stats" aria-label="Datos del grupo">
+        <li><strong data-count="4">0</strong><span>líneas de investigación</span></li>
+        <li><strong data-count="12">0</strong><span>doctorandos</span></li>
+        <li><strong data-count="8">0</strong><span>técnicas de laboratorio</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section section-tint" id="servicios">
+    <div class="wrap">
+      <h2>Servicios</h2>
+      <p class="section-intro">Ofrecemos apoyo técnico y académico a investigadores, estudiantes y empresas.</p>
+      <div class="services">
+        <article class="service">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 6h16M20 6v14L9 40a3 3 0 0 0 3 4h24a3 3 0 0 0 3-4L28 20V6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Análisis moleculares</h3>
+          <p>Extracción de ADN y ARN, PCR, electroforesis y cuantificación.</p>
+        </article>
+        <article class="service">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 36l12-14 8 8 16-20M6 42h36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Análisis de datos</h3>
+          <p>Procesamiento de secuencias y estadística aplicada a datos biológicos.</p>
+        </article>
+        <article class="service">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18l20-10 20 10-20 10zM12 23v10c0 3 6 6 12 6s12-3 12-6V23" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Talleres y asesorías</h3>
+          <p>Capacitación en técnicas moleculares y diseño de proyectos de investigación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICACIONES -->
+  <section class="section" id="publicaciones">
+    <div class="wrap">
+      <h2>Publicaciones</h2>
+      <p class="section-intro">Filtra por tipo. Reemplaza estos ejemplos con las referencias reales del grupo.</p>
+      <div class="filters" role="group" aria-label="Filtrar publicaciones">
+        <button class="chip is-on" data-filter="all">Todas</button>
+        <button class="chip" data-filter="articulo">Artículos</button>
+        <button class="chip" data-filter="congreso">Congresos</button>
+        <button class="chip" data-filter="tesis">Tesis</button>
+      </div>
+      <ul class="pubs" id="pubs">
+        <li data-type="articulo"><span class="year">2026</span><div><h3>Título del artículo de ejemplo sobre expresión génica</h3><p>Apellido A., Apellido B. Revista de Ejemplo. DOI pendiente.</p></div><em>Artículo</em></li>
+        <li data-type="congreso"><span class="year">2025</span><div><h3>Título de ponencia de ejemplo en congreso de biología molecular</h3><p>Apellido C., Apellido D. Memorias del congreso.</p></div><em>Congreso</em></li>
+        <li data-type="tesis"><span class="year">2025</span><div><h3>Título de tesis doctoral de ejemplo</h3><p>Apellido E. Universidad Tecnológica de Pereira.</p></div><em>Tesis</em></li>
+        <li data-type="articulo"><span class="year">2024</span><div><h3>Título de artículo de ejemplo sobre bioinformática</h3><p>Apellido F., Apellido G. Revista de Ejemplo.</p></div><em>Artículo</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section-dark" id="contacto">
+    <div class="wrap contact">
+      <div>
+        <h2>Contacto</h2>
+        <p class="section-intro">Cuéntanos qué necesitas y te responderemos pronto.</p>
+        <address>
+          <p><strong>Universidad Tecnológica de Pereira</strong><br>UTP Manizales, Caldas, Colombia</p>
+          <p><a href="mailto:contacto@ejemplo.edu.co">contacto@ejemplo.edu.co</a></p>
+        </address>
+      </div>
+      <form id="contactForm" novalidate>
+        <label>Nombre<input type="text" name="nombre" required autocomplete="name"></label>
+        <label>Correo electrónico<input type="email" name="correo" required autocomplete="email"></label>
+        <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Grupo de Doctorado en Biología Molecular · Universidad Tecnológica de Pereira</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
